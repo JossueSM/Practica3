@@ -1,0 +1,30 @@
+<div class="container">
+    <form>
+        <div class="form-group">
+            <h1 class="text-center text-primary">Facturas Gastos</h1>
+            </div>
+        <div class="col-auto">
+            <label class="visually-hidden" for="autoSizingSelect">RUC:  </label>
+            <input type="text" id="ruc" name="ruc" [(ngModel)]="ruc">
+            <br>
+            <label class="visually-hidden" for="autoSizingSelect">Valor:  </label>
+            <input type="number" id="valor" name="valor" [(ngModel)]="valor">
+            <br>
+            <label class="visually-hidden" for="autoSizingSelect">Tipo de Gasto:</label>
+            <select class="form-select" id="gasto" name="gasto" [(ngModel)]="gasto" >
+              <option selected>...</option>
+              <option value="Vivienda">Vivienda</option>
+              <option value="Salud">Salud</option>
+              <option value="Educacion">Educacion</option>
+            </select>
+            <br>
+            <button type="button" class="btn btn-primary btn-lg">Enviar</button>
+          </div>
+          
+    </form>
+    </div>
+    <div>
+        <p>RUC: {{ruc}}</p>
+        <p>VALOR: {{valor}}</p>
+        <p>TIPO GASTO: {{gasto}}</p>
+    </div>
